@@ -1,9 +1,11 @@
-# EXPRESS: libreria para los endpoints
+# GABRIEEE XOXOXOXOXOXOXO
 
-# CORS (Cors Origin Resource Sharing): Libreria que permite que los endpoints se puedan consumir desde diferentes origenes
+## EXPRESS: libreria para los endpoints
 
-# DOTENV: para proteger las variables de entorno
+## CORS (Cors Origin Resource Sharing): Libreria que permite que los endpoints se puedan consumir desde diferentes origenes
 
-# MULTER: para cargar archivos al proyecto
+## DOTENV: para proteger las variables de entorno
 
-# MONGOOSE: para conectarse con la base de datos
+## MULTER: para cargar archivos al proyecto
+
+## MONGOOSE: para conectarse con la base de datos
