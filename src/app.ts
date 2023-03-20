@@ -10,9 +10,9 @@ app.use(express.json())
 app.use(router)
 app.use(express.urlencoded({ extended: true }));
 
-db().then(() => console.log(`Conexión con BBDD`))
+db().then(() => console.log(`APP conectada a la BBDD`))
 
 const PORT = process.env.PORT || 3001
 app.listen (PORT, () => {
-    console.log(`APP escuchando en puerto ${PORT}`);
+    console.log(`APP escuchando por el puerto ${PORT}`);
 })
