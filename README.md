@@ -9,3 +9,5 @@
 ## MULTER: para cargar archivos al proyecto
 
 ## MONGOOSE: para conectarse con la base de datos
+
+## Link del tutorial en youtube : https://www.youtube.com/watch?v=T1QFGwOnQxQ&t=7759s
