@@ -1,10 +1,7 @@
 import { Request, Response } from "express"
 import { JwtPayload } from "jsonwebtoken"
+import { RequestExtended } from "../interfaces/req-ext.interface"
 import { handleHTTP } from "../utils/error.handle"
-
-interface RequestExtended extends Request {
-    user?: string | JwtPayload
-}
 
 const getItems = (req: RequestExtended, res: Response) => {
     try {

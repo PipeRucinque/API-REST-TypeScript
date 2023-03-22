@@ -2,17 +2,14 @@
 
 import { NextFunction, Request, Response } from "express"
 import { JwtPayload } from "jsonwebtoken"
+import { RequestExtended } from "../interfaces/req-ext.interface"
 import { verifyToken } from "../utils/jwt.handle"
-
-interface RequestExtended extends Request {
-    user?: string | JwtPayload
-}
 
 const checkJWT = (req: RequestExtended, res: Response, next: NextFunction) => {
     try {
         const jwtByUser = req.headers.authorization || ' '
         const cleanJWT = jwtByUser.split(' ').pop()
-        const isUser = verifyToken(`${cleanJWT}`)
+        const isUser = verifyToken(`${cleanJWT}`) as { id: string }
         if (!isUser) {
             res.status(401).send('No tienes un JWT valido')
         } else {
